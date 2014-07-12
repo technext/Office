@@ -191,9 +191,9 @@ address {
     margin: 0;
     text-align: left;
 }
-
 .header a.brand {
-    font-family: 'Pacifico', cursive;
+
+    font-family: 'PT Sans', sans-serif;
     font-size: 40px;
     margin-top:5px;
     display: inline-block;
@@ -369,7 +369,7 @@ footer{
 
 }
 footer a.brand {
-    font-family: 'Pacifico', cursive;
+    font-family: 'PT Sans', sans-serif;
     font-size: 36px;
     color:white;
     margin-top:5px;
