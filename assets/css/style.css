@@ -183,9 +183,9 @@ address {
 
 #banners{
     background-image:url('../img/slider/1.jpg');
-    height:150px;
-    margin-bottom: 30px;
-    padding-top: 25px;
+    height: 3px;
+    margin-top: 127px;
+    margin-bottom: 10px;
 }
 #banner-home{
     background-image:url('../img/slider/1.jpg');
