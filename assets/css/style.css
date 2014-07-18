@@ -36,6 +36,19 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 
  }
 }
+.tales {
+  width: 100%;
+}
+.blog-post{
+ margin-bottom: 30px;   
+}
+.blog-image{
+    margin-bottom: 20px;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 500px !important;
+}
 .post-sidebar{
     margin-top: 15px;
     border:1px solid #DDD;
@@ -55,7 +68,7 @@ h3.col-xs-12{
 
 }
 .content-space{
-    margin-top: 140px;
+    margin-top: 40px;
 }
 
 
@@ -68,8 +81,8 @@ float: right;
     display: inline-block;
     padding:10px;
 }
-.current{
-    background:#55CBD2;
+.current span{
+    color:#55CBD2;
 
 }
 
@@ -137,8 +150,10 @@ address {
 
 
 /* ----- Header ----- */
+
 .navbar-brand{
     padding:5px 10px;
+    width: 150px;
 }
 .navbar.navbar-default{
     background: none;
@@ -147,7 +162,6 @@ address {
 }
 .navbar-collapse {
     color: #999;
-    background-color:#FDFDFD;
     border-color: #FFF;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
     margin: 15px 0;
@@ -167,6 +181,17 @@ address {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff717171', endColorstr='#ff505050', GradientType=0);
 }
 /************Nav***********/
+.navbar-nav > li > a {
+    border-right: 1px solid #CE6D6D;
+    height: 44px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: rgba(0, 0, 0, 1);
+}
+.navbar-nav {
+    margin-top: 18px;
+}
+
 @media (min-width: 50px) and (max-width: 768px) { 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #E7E7E7;
@@ -184,7 +209,7 @@ address {
 #banners{
     background-image:url('../img/slider/1.jpg');
     height: 3px;
-    margin-top: 127px;
+    margin-top: 90px;
     margin-bottom: 10px;
 }
 #banner-home{
