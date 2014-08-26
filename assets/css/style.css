@@ -389,7 +389,8 @@ p.blog-text{
     padding: 10px;
     color: white;
     background: #1BBD9B;
-    border-radius: 13px;   
+    border-radius: 3px; 
+    transition:.4s;  
 }
 
 
