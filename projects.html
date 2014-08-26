@@ -29,24 +29,22 @@
 
     <!-- Header -->
         
-    <div class="navbar-wrapper">
-      <header class="container">
-        <nav class="navbar navbar-default">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="logo col-md-3"> 
-              <a class="navbar-brand" href="index.html"> 
-                <img src="assets/img/slider/office.png" alt="Office">
-              </a> 
-            </div>
-          </div>
-          <div class="navbar-collapse collapse navbar-right">
-            <ul class="nav navbar-nav">
-              <li>
+   <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="assets/img/slider/Office.png" width="100" alt="Office"></a>      
+        </div>
+        
+        <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li>
                   <a href="index.html">Home</a>
               </li>
               <li>
@@ -55,20 +53,19 @@
               <li>
                   <a href="about.html">About</a>
               </li>
-              <li  class="current">
-                  <a href="projects.html"><span>Projects</span></a>
+              <li class="active">
+                  <a href="projects.html">Projects</a>
               </li>
               <li>
                   <a href="team.html">Team</a>
               </li>
               <li>
-                  <a href="contact.html">Contact</a>
+                  <a href="contact.html"><span>Contact</span></a>
               </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
+          </ul>         
+        </div>
+      </div>
+    </nav>
 
     <div id="banners">
       <div id="banner"> 
@@ -166,18 +163,13 @@
                 </div>
             </div>
         </div>
-    </div>
-
- 
+    </div> 
     <!--End Main Container -->
     <!-- Footer -->
-      
-     <footer> 
+      <footer> 
       <div class="container">
         <div class="row">
-          <div class="col-lg-offset-1 col-sm-offset-2 col-sm-10 col-md-11">
-            <div class="row">
-              <div class="widget col-sm-12 col-md-2">
+              <div class="col-md-4">
                 <h3><i class="fa fa-map-marker"></i>Contact:</h3>
                   <p class="footer-contact">
                     Via Ludovisi 39-45, Rome, 54267, Italy<br>
@@ -185,7 +177,7 @@
                     Email: hello@LawOffice.org<br>
                    </p>
               </div>
-              <div class="widget col-lg-offset-2 col-sm-6 col-md-4">
+              <div class="col-md-4">
                 <h3><i class="fa fa-external-link"></i> Links</h3>
                 <p> <a href="#"> About ( Who we are )</a></p>
                 <p> <a href="#"> Services ( What we do )</a></p>
@@ -193,7 +185,7 @@
                 <p> <a href="#"> Blog ( Write to us )</a></p>
                 <p> <a href="#"> Team ( Meet the Team )</a></p> 
               </div>
-              <div class="widget col-sm-12 col-md-4">
+              <div class="col-md-4">
                 <h3><i class="fa fa-heart"></i> Socialize</h3>
                 <div id="social-icons">
                   <div class="btn-group google-plus fa fa-google-plus fa-3x"></div>
@@ -201,9 +193,7 @@
                   <div class="btn-group twitter fa fa-twitter fa-3x"></div>
                   <div class="btn-group facebook fa fa-facebook fa-3x"></div>
                 </div>
-              </div>
-            </div>    
-          </div>
+              </div>    
         </div>
       </div>
     </footer>

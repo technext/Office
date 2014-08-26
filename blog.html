@@ -29,28 +29,26 @@
 
     <!-- Header -->
         
-    <div class="navbar-wrapper">
-      <header class="container">
-        <nav class="navbar navbar-default">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="logo col-md-3"> 
-              <a class="navbar-brand" href="index.html"> 
-                <img src="assets/img/slider/office.png" alt="Office">
-              </a> 
-            </div>
-          </div>
-          <div class="navbar-collapse collapse navbar-right">
-            <ul class="nav navbar-nav">
-              <li>
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="assets/img/slider/Office.png" width="100" alt="Office"></a>      
+        </div>
+        
+        <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li>
                   <a href="index.html">Home</a>
               </li>
-              <li  class="current">
-                  <a href="blog.html"><span>Blog</span></a>
+              <li class="active">
+                  <a href="blog.html">Blog</a>
               </li>
               <li>
                   <a href="about.html">About</a>
@@ -62,13 +60,12 @@
                   <a href="team.html">Team</a>
               </li>
               <li>
-                  <a href="contact.html">Contact</a>
+                  <a href="contact.html"><span>Contact</span></a>
               </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
+          </ul>         
+        </div>
+      </div>
+    </nav>
           
     <div id="banners">
       <div id="banner">
@@ -81,10 +78,11 @@
     
     <div class="container">
       <div class="row">
-        <div class="col-md-7 col-md-offset-1"> 
+        <div class="col-md-9"> 
           <div class="blog-post">
-           <h1>Alice in Wonderland, part dos</h1>
-           <img src="assets/img/slider/blog1.jpg" alt="Feature-img" align="right" height="250" width="100%" class="blog-image">
+           <!-- <h1>Alice in Wonderland, part dos</h1> -->
+           <br>
+           <img src="assets/img/slider/blog1.jpg" alt="Feature-img" align="right" width="100%" class="blog-image">
            <br>
               <p>'You ought to be ashamed of yourself for asking such a simple question,' added the Gryphon; and then they both sat silent and looked at poor Alice, who felt ready to sink into the earth. At last the Gryphon said to the Mock Turtle, 'Drive on, old fellow! Don't be all day about it!' and he went on in these words:
               'Yes, we went to school in the sea, though you mayn't believe it—'
@@ -99,7 +97,7 @@
             <hr>
           <div class="blog-post">
             <h1>Revolution has begun!</h1>
-            <img src="assets/img/slider/blog2.jpg" alt="Feature-img" align="right" height="250" width="100%" class="blog-image"> 
+            <img src="assets/img/slider/blog2.jpg" alt="Feature-img" align="right" width="100%" class="blog-image"> 
             <br>
             <p>'I am bound to Tahiti for more men.'
                 'Very good. Let me board you a moment—I come in peace.' With that he leaped from the canoe, swam to the boat; and climbing the gunwale, stood face to face with the captain.
@@ -117,7 +115,7 @@
           <hr>
           <div class="blog-post">
             <h1>Alice in Wonderland, part dos</h1>
-            <img src="assets/img/slider/blog3.jpg" alt="Feature-img" align="right" height="250" width="100%" class="blog-image">
+            <img src="assets/img/slider/blog3.jpg" alt="Feature-img" align="right" width="100%" class="blog-image">
               <p>'You ought to be ashamed of yourself for asking such a simple question,' added the Gryphon; and then they both sat silent and looked at poor Alice, who felt ready to sink into the earth. At last the Gryphon said to the Mock Turtle, 'Drive on, old fellow! Don't be all day about it!' and he went on in these words:
               'Yes, we went to school in the sea, though you mayn't believe it—'
               'I never said I didn't!' interrupted Alice.
@@ -194,12 +192,10 @@
     <!--End Main Container -->
     <!-- Footer -->
       
-      <footer> 
+     <footer> 
       <div class="container">
         <div class="row">
-          <div class="col-lg-offset-1 col-sm-offset-2 col-sm-10 col-md-11">
-            <div class="row">
-              <div class="widget col-sm-12 col-md-2">
+              <div class="col-md-4">
                 <h3><i class="fa fa-map-marker"></i>Contact:</h3>
                   <p class="footer-contact">
                     Via Ludovisi 39-45, Rome, 54267, Italy<br>
@@ -207,7 +203,7 @@
                     Email: hello@LawOffice.org<br>
                    </p>
               </div>
-              <div class="widget col-lg-offset-2 col-sm-6 col-md-4">
+              <div class="col-md-4">
                 <h3><i class="fa fa-external-link"></i> Links</h3>
                 <p> <a href="#"> About ( Who we are )</a></p>
                 <p> <a href="#"> Services ( What we do )</a></p>
@@ -215,7 +211,7 @@
                 <p> <a href="#"> Blog ( Write to us )</a></p>
                 <p> <a href="#"> Team ( Meet the Team )</a></p> 
               </div>
-              <div class="widget col-sm-12 col-md-4">
+              <div class="col-md-4">
                 <h3><i class="fa fa-heart"></i> Socialize</h3>
                 <div id="social-icons">
                   <div class="btn-group google-plus fa fa-google-plus fa-3x"></div>
@@ -223,9 +219,7 @@
                   <div class="btn-group twitter fa fa-twitter fa-3x"></div>
                   <div class="btn-group facebook fa fa-facebook fa-3x"></div>
                 </div>
-              </div>
-            </div>    
-          </div>
+              </div>    
         </div>
       </div>
     </footer>

@@ -10,12 +10,34 @@ License:GNU General Public License v2 or later
 License URI:http://www.gnu.org/licenses/gpl-2.0.html
 */
 
- /* ----- Global ----- */
+ /*
+* ==========================================================================
+* Global
+* ==========================================================================
+*/
 
  .main-content{
     margin-top: 20px;
     padding-bottom: 50px;
     text-align: left;
+}
+
+.section-global-wrapper {
+  position: relative;
+}
+.section-global-wrapper:before,
+.section-global-wrapper:after {
+  content: " ";
+  display: table;
+}
+.section-global-wrapper:after {
+  clear: both;
+}
+.container-fluid-kamn {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 1068px) and (max-width: 1400px) { 
@@ -152,61 +174,73 @@ address {
     }
  
 }
-
-
-/* ----- Header ----- */
-@media (min-width: 1105px) and (max-width: 1400px) { 
-.navbar-default .navbar-brand {
-    color: #777;
-    margin-left: 66px;
+/*
+* ==========================================================================
+* Nav Pills
+* ==========================================================================
+*/
+.nav-pills > li.selected > a,
+.nav-pills > li.selected > a:hover,
+.nav-pills > li.selected > a:focus {
+  color: #ffffff;
+  background-color: #1bbd9b;
 }
+/*
+* ==========================================================================
+* Pills Centered
+* ==========================================================================
+*/
+.nav-pills-centered > .nav-pills {
+  text-align: center;
 }
-
-.navbar-brand{
-    padding:5px 10px;
-    width: 150px;
+.nav-pills-centered > .nav-pills > li {
+  float: none;
+  display: inline;
 }
-.navbar.navbar-default{
-    background: none;
-    border:0;
-    margin-bottom: 0px;
+.nav-pills-centered > .nav-pills > li > a,
+.nav-pills-centered > .nav-pills > li > span {
+  display: inline-block;
+  padding: 5px 14px;
 }
-.navbar-collapse {
-    color: #999;
-    border-color: #FFF;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
-    margin: 15px 0;
-    border-radius: 4px;
+.nav-pills-centered > .nav-pills > li > a.active,
+.nav-pills-centered > .nav-pills > li > span.active,
+.nav-pills-centered > .nav-pills > li > a.selected,
+.nav-pills-centered > .nav-pills > li > span.selected {
+  color: #ffffff;
+  background-color: #1bbd9b;
 }
- 
-.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
-    color: #FFF;
-    text-decoration: none;
-    background-color: #505050;
-    background-image: -moz-linear-gradient(top, #717171, #505050);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#717171), to(#505050));
-    background-image: -webkit-linear-gradient(top, #717171, #505050);
-    background-image: -o-linear-gradient(top, #717171, #505050);
-    background-image: linear-gradient(to bottom, #717171, #505050);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff717171', endColorstr='#ff505050', GradientType=0);
+/*
+* ==========================================================================
+* Navbar
+* ==========================================================================
+*/
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
 }
-/************Nav***********/
+/*
+* ==========================================================================
+* Navbar Nav Links
+* ==========================================================================
+*/
 .navbar-nav > li > a {
-    border-right: 1px solid #CE6D6D;
-    height: 44px;
+  padding: 10px 15px;
+  margin: 5px 5px;
+  border-radius: 4px;
 }
-.navbar-default .navbar-nav > li > a {
-    color: rgba(0, 0, 0, 1);
-}
-.navbar-nav {
-   margin: 18px 80px 0 0;
-}
-
-@media (min-width: 50px) and (max-width: 768px) { 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #E7E7E7;
-    margin-top: 133px;}
+/*
+* ==========================================================================
+* Brand / Project Name
+* ==========================================================================
+*/
+.navbar-brand {  
+  z-index: 9999px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-top: 0px;
 }
 
 
@@ -219,7 +253,7 @@ address {
 
 #banners{
     
-    margin-top: 90px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 #banner-home{
@@ -241,9 +275,6 @@ address {
     margin-top:0px;
 }
 
-.header .navbar {
-    margin-bottom: 0;
-}
 
 .header h1 {
     float: left;
@@ -270,30 +301,6 @@ address {
         font-size: 37px;
      } 
  }  
-
-
-.header ul.nav {
-    padding: 52px 20px 10px 20px;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-
-.header ul.nav li a {
-    /*padding: 52px 20px 10px 20px;*/
-    text-shadow: none;
-    font-size: 14px;
-    color:white;
-}
-
-
-.header ul.nav li a i {
-    line-height: 35px;
-    
-}
-
-.header ul.nav li a:hover i { color: #fff; }
 
 .paragraph-text{
     text-align: justify;
@@ -337,6 +344,54 @@ p.blog-text{
 .btn-sm{
     margin-left: 21px;
 }
+/*
+* ==========================================================================
+* Services Section
+* ==========================================================================
+*/
+.services-section {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.services-section .services-header {
+  margin-bottom: 50px;
+}
+.services-section .services-header .services-header-title {
+  margin-bottom: 15px;
+}
+.services-section .services-row-tail {
+  margin-top: 50px;
+}
+.services-section .services-icon {
+  color: #1bbd9b;
+  margin-bottom: 30px;
+}
+.services-section .services-title {
+  margin-bottom: 15px;
+}
+.services-section .services-desc {
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .services-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .services-section .services-group {
+    margin-bottom: 50px;
+  }
+  .services-section .services-row-tail {
+    margin-top: 0;
+  }
+}
+.fa:hover{
+    padding: 10px;
+    color: white;
+    background: #1BBD9B;
+    border-radius: 13px;   
+}
+
 
 /* ----- Footer ----- */
 .footer-widget{
@@ -376,7 +431,13 @@ footer{
 color: white;
 }
 
-/* ----- Custom Sidebar Widgets ----- */
+/*
+* ==========================================================================
+* Custom Sidebar Widgets
+* ==========================================================================
+*/
+
+
 
 #custom-search-input {
         margin:0;
@@ -418,7 +479,14 @@ color: white;
     }
 
    
-    /************Image Card**************/
+    /*
+* ==========================================================================
+* Image Card
+* ==========================================================================
+*/
+    .panel{
+        margin-top: 30px;
+    }
     .lib-panel img {
     width: 100%;
     background-color: transparent;
@@ -478,7 +546,11 @@ color: white;
     font-style: normal;
 }
 
-/**************Blockquote Box***************/
+/*
+* ==========================================================================
+* Blockquote
+* ==========================================================================
+*/
 
 .glyphicon-lg{font-size:3em}
 .blockquote-box{border-right:5px solid #E6E6E6;margin-bottom:25px}
@@ -494,7 +566,11 @@ color: white;
 .blockquote-box.blockquote-danger{border-color:#D43F3A}
 .blockquote-box.blockquote-danger .square{background-color:#D9534F;color:#FFF}
 
-/*********************Portfolio******************/
+/*
+* ==========================================================================
+* Portfolio
+* ==========================================================================
+*/
 .panel-image {
     position: relative;   
 }
@@ -540,4 +616,32 @@ color: white;
     padding: 0px 10px;
     font-size: 1.3em;
     color: rgb(100, 100, 100);
+}
+/*
+* ==========================================================================
+* Optional Carousel
+* ==========================================================================
+*/
+.carousel-caption .carousel-title {
+  color: #ffffff;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .carousel-caption {
+    font-size: 12px;
+    padding-bottom: 0px;
+    bottom: 2px;
+  }
+  .carousel-caption .carousel-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-caption {
+    font-size: 11px;
+    padding-bottom: 0;
+    bottom: 0;
+  }
+  .carousel-caption .carousel-title {
+    font-size: 14px;
+  }
 }

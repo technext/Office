@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-projects.css">
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    
 
     <!-- Favicon and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
@@ -29,25 +29,23 @@
 
     <!-- Header -->
         
-    <div class="navbar-wrapper">
-      <header class="container">
-        <nav class="navbar navbar-default">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="logo col-md-3"> 
-              <a class="navbar-brand" href="index.html"> 
-                <img src="assets/img/slider/office.png" alt="Office">
-              </a> 
-            </div>
-          </div>
-          <div class="navbar-collapse collapse navbar-right">
-            <ul class="nav navbar-nav">
-              <li  class="current">
-                  <a href="index.html"><span>Home</span></a>
+   <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="assets/img/slider/Office.png" width="100" alt="Office"></a>      
+        </div>
+        
+        <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li class="active">
+                  <a href="index.html">Home</a>
               </li>
               <li>
                   <a href="blog.html">Blog</a>
@@ -62,104 +60,162 @@
                   <a href="team.html">Team</a>
               </li>
               <li>
-                  <a href="contact.html">Contact</a>
+                  <a href="contact.html"><span>Contact</span></a>
               </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
-
-
-    <div id="banners">
-      <div id="banner">
+          </ul>         
+        </div>
       </div>
-    </div>
+    </nav>
 
     <!-- End Header -->
-    <!-- Main Container -->
-    <div class="container">
+      <!-- Begin #carousel-section -->
+  <section id="carousel-section" class="section-global-wrapper"> 
+    <div class="container-fluid-kamn">
       <div class="row">
-        <div class="col-lg-offset-1 col-sm-10 col-xs-12 col-md-10">
-          <h4 class="title-text">So we came up with this UI. Here you can use it.</h4>
-          <h4>Build a professional website with "Office" template; Responsive Design, Take your official website to a new height!
-          </h4>
-            <hr>
-            
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="assets/img/slider/img1.jpg" alt="Slider1" width="100%" class: "tales">
-                <div class="carousel-caption">
-                  Slider1
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/img/slider/img2.jpg" alt="Slider2" width="100%" class: "tales">
-                <div class="carousel-caption">
-                  Slider2
-                </div>
-              </div>
-              <div class="item">
-                <img src="assets/img/slider/img3.jpg" alt="Slider3" width="100%" class: "tales">
-                <div class="carousel-caption">
-                  Slider3
-                </div>
+        <div id="carousel-1" class="carousel slide">
+          <!-- Indicators -->
+          <ol class="carousel-indicators visible-lg">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-1" data-slide-to="1"></li>
+            <li data-target="#carousel-1" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <!-- Begin Slide 1 -->
+            <div class="item active">
+              <img src="assets/img/slider/slide2.jpg" alt="">
+              <div class="carousel-caption">
+                <h3 class="carousel-title hidden-xs">Office BOOTSTRAP TEMPLATE</h3>
+                <p class="carousel-body">RESPONSIVE \ MULTI PAGE</p>
               </div>
             </div>
-
+            <!-- End Slide 1 -->
+            <!-- Begin Slide 2 -->
+            <div class="item">
+              <img src="assets/img/slider/slide2.jpg" alt="">
+              <div class="carousel-caption">
+                <h3 class="carousel-title hidden-xs">EASY TO CUSTOMIZE</h3>
+                <p class="carousel-body">BEAUTIFUL \ CLEAN \ MINIMAL</p>
+              </div>
+            </div>
+            <!-- End Slide 2 -->
+            <!-- Begin Slide 3 -->
+            <div class="item">
+              <img src="assets/img/slider/slide2.jpg" alt="">
+              <div class="carousel-caption">
+                <h3 class="carousel-title hidden-xs">MULTI-PURPOSE TEMPLATE</h3>
+                <p class="carousel-body">PORTFOLIO \ CORPORATE \ CREATIVE</p>
+              </div>
+            </div>
+            <!-- End Slide 3 -->
+          </div>
+        
           <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <a class="left carousel-control" href="#carousel-1" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <a class="right carousel-control" href="#carousel-1" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
-        </div><br>
-        <p class="lead">Office is the PERFECT solution for your business & projects website.</p>
+        </div>
+  
+      </div>
+    </div>
+  
+  </section>
+
+
+  <!-- End #carousel-section -->
+
+   <!-- Begin #services-section -->
+  <section id="services" class="services-section section-global-wrapper">
+    
+    <div class="container">
+      
+      <div class="row">
+        <div class="services-header">
+          <h3 class="services-header-title">Our Mission</h3>
+          <p class="services-header-body">Things we provide in Office</p>
+        </div>
+      </div>
+      
+      <!-- Begin Services Row 1 -->
+      <div class="row services-row services-row-head services-row-1">
+        
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+            <p class="services-icon"><span class="fa fa-android fa-5x"></span></p>
+            <h4 class="services-title">Android</h4>
+            <p class="services-body">Cras interdum placerat libero vel tempor. Curabitur gravida iaculis erat quis dignissim.</p>
+            <p class="services-more"><a href="#">Find Out More</a></p>
           </div>
         </div>
-      </div> 
-      <div class="main-content">
-            <div class="container">   
-              <div class="row">
-                <h2 class="center title-text">Our Mission</h2><hr>
-                <br>
-                <div class="col-md-11 col-md-offset-1">
-               <div class="col-md-3 ">
-               <h3>HISTORY</h3>    
-                    <p>Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups.</p>
-               </div> 
-               <div class="col-md-3 col-md-offset-1">
-               <h3>TRUST</h3>    
-                    <p>Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups.</p>
-               </div>
-               <div class="col-md-3 col-md-offset-1">
-               <h3>PROCEDURE</h3>
-                    <p>Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups.</p>
-               </div>     
-              </div>
-            </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="services-group wow animated swing" data-wow-offset="40">
+            <p class="services-icon"><i class="fa fa-apple fa-5x"></i></p>
+            <h4 class="services-title">Apple</h4>
+            <p class="services-body">Cras interdum placerat libero vel tempor. Curabitur gravida iaculis erat quis dignissim.</p>
+            <p class="services-more"><a href="#">Find Out More</a></p>
           </div>
-        </div>     
-      <!--End Main Container -->
-     
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+            <p class="services-icon"><i class="fa fa-thumbs-o-up fa-5x"></i></p>
+            <h4 class="services-title">EASY TO USE</h4>
+            <p class="services-body">Cras interdum placerat libero vel tempor. Curabitur gravida iaculis erat quis dignissim.</p>
+            <p class="services-more"><a href="#">Find Out More</a></p>
+          </div>        
+        </div>
+      
+      </div>
+      <!-- End Serivces Row 1 -->
+      
+      <!-- Begin Services Row 2 -->
+      <div class="row services-row services-row-tail services-row-2">
+        
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+            <p class="services-icon"><span class="fa fa-windows fa-5x"></span></p>
+            <h4 class="services-title">Windows</h4>
+            <p class="services-body">Cras interdum placerat libero vel tempor. Curabitur gravida iaculis erat quis dignissim.</p>
+            <p class="services-more"><a href="#">Find Out More</a></p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="services-group wow animated swing" data-wow-offset="40">
+            <p class="services-icon"><i class="fa fa-eye fa-5x"></i></p>
+            <h4 class="services-title">RETINA READY</h4>
+            <p class="services-body">Cras interdum placerat libero vel tempor. Curabitur gravida iaculis erat quis dignissim.</p>
+            <p class="services-more"><a href="#">Find Out More</a></p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+            <p class="services-icon"><i class="fa fa-cube fa-5x"></i></p>
+            <h4 class="services-title">Cubic</h4>
+            <p class="services-body">Cras interdum placerat libero vel tempor. Curabitur gravida iaculis erat quis dignissim.</p>
+            <p class="services-more"><a href="#">Find Out More</a></p>
+          </div>
+        </div>
+      
+      </div>
+      <!-- End Serivces Row 2 -->
+    
+    </div>      
+  
+  </section>
+  <!-- End #services-section -->
     <!-- Footer -->
       
      <footer> 
       <div class="container">
         <div class="row">
-          <div class="col-lg-offset-1 col-sm-offset-2 col-sm-10 col-md-11">
-            <div class="row">
-              <div class="widget col-sm-12 col-md-2">
+              <div class="col-md-4">
                 <h3><i class="fa fa-map-marker"></i>Contact:</h3>
                   <p class="footer-contact">
                     Via Ludovisi 39-45, Rome, 54267, Italy<br>
@@ -167,7 +223,7 @@
                     Email: hello@LawOffice.org<br>
                    </p>
               </div>
-              <div class="widget col-lg-offset-2 col-sm-6 col-md-4">
+              <div class="col-md-4">
                 <h3><i class="fa fa-external-link"></i> Links</h3>
                 <p> <a href="#"> About ( Who we are )</a></p>
                 <p> <a href="#"> Services ( What we do )</a></p>
@@ -175,7 +231,7 @@
                 <p> <a href="#"> Blog ( Write to us )</a></p>
                 <p> <a href="#"> Team ( Meet the Team )</a></p> 
               </div>
-              <div class="widget col-sm-12 col-md-4">
+              <div class="col-md-4">
                 <h3><i class="fa fa-heart"></i> Socialize</h3>
                 <div id="social-icons">
                   <div class="btn-group google-plus fa fa-google-plus fa-3x"></div>
@@ -183,11 +239,15 @@
                   <div class="btn-group twitter fa fa-twitter fa-3x"></div>
                   <div class="btn-group facebook fa fa-facebook fa-3x"></div>
                 </div>
-              </div>
-            </div>    
-          </div>
+              </div>    
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
