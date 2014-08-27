@@ -15,6 +15,9 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 * Global
 * ==========================================================================
 */
+.btn-primary{
+  margin-left: 20px;
+}
 
  .main-content{
     margin-top: 20px;
@@ -39,6 +42,11 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
   padding-left: 15px;
   padding-right: 15px;
 }
+.container-kamn {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 @media (min-width: 1068px) and (max-width: 1400px) { 
  .post-sidebar{
@@ -214,7 +222,12 @@ address {
 * Navbar
 * ==========================================================================
 */
+.active{
+  background:#74B9B9 !important;
+  color: white;
+}
 .navbar {
+  font-weight: bold;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0;
@@ -242,7 +255,19 @@ address {
   letter-spacing: 2px;
   padding-top: 0px;
 }
-
+.side-left{
+  background:#528C7C;
+  box-shadow: 3px grey;
+  color: white;
+  padding: 30px;
+  letter-spacing: .9px;
+}
+@media (min-width: 800px){ 
+ 
+    .side-left{
+  height: 1248px;
+}
+ }
 
 .banner-text{
     font-family: 'Raleway', sans-serif;
@@ -346,6 +371,44 @@ p.blog-text{
 }
 /*
 * ==========================================================================
+* Feedback Section
+* ==========================================================================
+*/
+.feedback-section {
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .feedback-section {
+    padding-bottom: 40px;
+  }
+}
+.feedback-section .feedback-form .btn-captcha-refresh {
+  margin: 0 0 0 25px;
+}
+.feedback-section .address-section {
+  text-align: center;
+  padding-top: 50px;
+}
+@media (max-width: 767px) {
+  .feedback-section .address-section {
+    padding-top: 40px;
+  }
+}
+.feedback-section .address-section .address-icon {
+  color: #1bbd9b;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+.feedback-section .address-section .address-title {
+  margin-bottom: 15px;
+}
+.feedback-section .address-section .address-desc {
+  margin-bottom: 30px;
+}
+
+/*
+* ==========================================================================
 * Services Section
 * ==========================================================================
 */
@@ -391,6 +454,14 @@ p.blog-text{
     background: #1BBD9B;
     border-radius: 3px; 
     transition:.4s;  
+}
+.services-group{
+  padding: 10px;
+  background:#061F20;
+  color: white;
+}
+.service-icon{
+  color: white;
 }
 
 
