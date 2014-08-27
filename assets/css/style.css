@@ -18,6 +18,11 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 .btn-primary{
   margin-left: 20px;
 }
+.blog-title{
+  color: #385A30;
+  font-family: "Lato";
+  font-variant: small-caps;
+}
 
  .main-content{
     margin-top: 20px;
@@ -419,6 +424,7 @@ p.blog-text{
 }
 .services-section .services-header {
   margin-bottom: 50px;
+  font-size: 25px;
 }
 .services-section .services-header .services-header-title {
   margin-bottom: 15px;
@@ -448,7 +454,7 @@ p.blog-text{
     margin-top: 0;
   }
 }
-.fa:hover{
+.services-icon .fa:hover{
     padding: 10px;
     color: white;
     background: #1BBD9B;
