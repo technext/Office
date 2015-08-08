@@ -497,8 +497,13 @@ footer{
    margin-top:40px;
    padding: 20px; 
    background: black;
-
 }
+
+footer h3 {
+    color: #dadada;
+    margin-bottom: 20px;
+}
+
 .footer-contact{
     color: white;
 }
@@ -506,7 +511,21 @@ footer{
 
 /*Social Buttons */
 #social-icons{
-color: white;
+  font-size: 22px;
+}
+
+#social-icons .btn-group {
+    color: #55CBD2;
+    margin-right: 15px;
+}
+#social-icons .btn-group:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    color: #fff;
+    padding: 20px 0px 10px 0px;
+    background-color: rgb(23, 23, 23);
 }
 
 /*
