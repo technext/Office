@@ -368,12 +368,21 @@ p.blog-text{
     text-justify:inter-word;
     }
 
-
-
-
 .btn-sm{
     margin-left: 21px;
 }
+
+.office-logo {
+  width: 100px;
+}
+
+@media (max-width: 768px){ 
+    .office-logo{
+      height: 100px;
+      width: 50px;
+  }
+}
+
 /*
 * ==========================================================================
 * Feedback Section
